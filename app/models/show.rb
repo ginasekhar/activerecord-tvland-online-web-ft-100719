@@ -7,8 +7,8 @@ class Show < ActiveRecord::Base
         self.actors.map { |actor| actor.full_name }
     end
 
-    def build_network(network_hash)
-        new_network = Network.find_or_create_by(network_hash)
-        self.network = new_network
-    end
+    # def build_network(network_hash)
+    #     new_network = Network.find_or_create_by(network_hash)
+    #     self.network = new_network
+    # end
 end
